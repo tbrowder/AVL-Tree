@@ -1,10 +1,10 @@
 #|{{
 
 This code has been translated from the Java version on
-rosettacode.org. Consequently, it should have the same license: GNU
-Free Document License 1.2.  In addition to the translated code, other
-public methods have been added as shown by the asterisk in the
-following list of all public methods:
+<https://rosettacode.org>. Consequently, it should have the same
+license: GNU Free Document License 1.2.  In addition to the translated
+code, other public methods have been added as shown by the asterisks
+in the following list of all public methods:
 
 +  insert node
 +  delete node
@@ -34,29 +34,31 @@ class AVL-Tree {
     # public methods
     #=====================================================
 
+    #| returns a node object or 0 if not found
     method find($key) {
-        # returns a node object or 0 if not found
         return 0 if !$.root;
         self!find: $key, $.root;
     }
 
+    #| returns a list of tree keys
     method keys() {
-        # returns a list of tree keys
         return () if !$.root;
         my @list;
         self!keys: $.root, @list;
         @list;
     }
 
+    #| returns a list of tree nodes
     method nodes() {
-        # returns a list of tree nodes
         return () if !$.root;
         my @list;
         self!nodes: $.root, @list;
         @list;
     }
 
-    method insert($key, :$parent = 0, :$data = 0) {
+    #| insert a node key, optionally add data (the `parent` arg is for
+    #| internal use only)
+    method insert($key, :$data = 0, :$parent = 0,) {
         return $.root = Node.new: :$key, :$parent, :$data if !$.root;
         my $n = $.root;
         while True {
@@ -78,6 +80,7 @@ class AVL-Tree {
         True
     }
 
+    #| delete one or more nodes by key
     method delete(*@del-key) {
         return if !$.root;
         for @del-key -> $del-key {
@@ -93,11 +96,13 @@ class AVL-Tree {
         }
     }
 
+    #| show a list of all nodes by key
     method show-keys {
         self!show-keys: $.root;
         say()
     }
 
+    #| show a list of all nodes' balances (not normally needed)
     method show-balances {
         self!show-balances: $.root;
         say()

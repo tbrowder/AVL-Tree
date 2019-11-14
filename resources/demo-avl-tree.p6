@@ -16,7 +16,6 @@
 # + *return list of all node keys
 # + *return list of all node objects
 
-use lib <./lib>;
 use AVL-Tree;
 
 my $tree = AVL-Tree.new;
