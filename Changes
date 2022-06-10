@@ -1,6 +1,7 @@
 {{$NEXT}}
   - Move to management by App::Mi6
   - Move to Zef ecosystem
+  - Preparing for api2
 
 0.0.1  2019-11-14T00:00:00-00:00
   - Initial version
