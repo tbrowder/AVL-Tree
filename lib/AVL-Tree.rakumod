@@ -1,3 +1,5 @@
+# This is a class definition file
+
 #|{{
 
 This code has been translated from the Java version on

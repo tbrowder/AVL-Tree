@@ -1,34 +1,34 @@
 {
-    "version" : "0.0.1",
-    "auth" : "github:tbrowder",
-    "author" : "github:tbrowder",
-    "authors" : [
-        "Tom Browder <tom.browder@gmail.com>"
-    ],
-    "build-depends" : [ ],
-    "depends" : [ ],
-    "description" : "Provides an implementation of an AVL tree.",
-    "license" : "Artistic-2.0",
-    "name" : "AVL-Tree",
-    "perl" : "6.*",
-    "provides" : {
-        "AVL-Tree"  : "lib/AVL-Tree.pm6"
-    },
-    "resources" : [
-        "demo-avl-tree.p6"
-    ],
-    "source-type" : "git",
-    "source-url" : "git://github.com/tbrowder/AVL-Tree.git",
-    "support" : {
-        "bugtracker" : "https://github.com/tbrowder/AVL-Tree/issues"
-    },
-    "tags" : [
-        "tree",
-        "BST",
-        "set",
-        "AVL"
-    ],
-    "test-depends" : [
-        "Test::META"
-    ]
+  "auth": "zef:tbrowder",
+  "author": "zef:tbrowder",
+  "authors": [
+    "Tom Browder <tbrowder@acm.org>"
+  ],
+  "build-depends": [
+  ],
+  "depends": [
+  ],
+  "description": "Provides an implementation of an AVL tree.",
+  "license": "Artistic-2.0",
+  "name": "AVL-Tree",
+  "perl": "6.*",
+  "provides": {
+    "AVL-Tree": "lib/AVL-Tree.rakumod"
+  },
+  "resources": [
+  ],
+  "source-type": "git",
+  "source-url": "git://github.com/tbrowder/AVL-Tree.git",
+  "support": {
+    "bugtracker": "https://github.com/tbrowder/AVL-Tree/issues"
+  },
+  "tags": [
+    "tree",
+    "BST",
+    "set",
+    "AVL"
+  ],
+  "test-depends": [
+  ],
+  "version": "0.0.1"
 }

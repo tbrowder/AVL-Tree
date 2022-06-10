@@ -1,23 +1,10 @@
-#!/usr/bin/env perl6
-
-# This code has been translated from the Java version on
-# rosettacode.org. Consequently, it should have the same license: GNU
-# Free Document License 1.2.  In addition to the translated code,
-# other public methods have been added as shown by the asterisk in the
-# following list of all public methods:
-#
-# +  insert node
-# +  delete node
-# +  show all node keys
-# +  show all node balances
-# + *delete nodes by a list of node keys
-# + *find and return node objects by key
-# + *attach data per node
-# + *return list of all node keys
-# + *return list of all node objects
+use Test;
 
 use AVL-Tree;
 
+plan 1;
+
+lives-ok {
 my $tree = AVL-Tree.new;
 my @keys = 4, 2, -1, 4, 5, 9, 6, 14, 11, 20, 10;
 say "Keys to be inserted in the order shown (notice the two 4's):";
@@ -62,4 +49,6 @@ say "Find all ...";
 for @n -> $n {
     say "=== node key: {$n.key}";
     say "    data: {$n.data}";
+}
+
 }

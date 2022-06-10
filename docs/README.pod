@@ -1,0 +1,61 @@
+=begin pod
+
+=head1 AVL-Tree
+
+This implementation of an AVL Tree has been uploaded
+to L<rosettacode.org|https://rosettacode.org>.
+
+It was initially a translation of the Java version on Rosetta Code.
+In addition to the translated code, other public methods have been
+added as shown by the leading asterisk in the following list of all public
+methods:
+
+=item insert node
+=item delete node
+=item show all node keys
+=item show all node balances
+=item *delete nodes by a list of node keys
+=item *find and return node objects by key
+=item *attach data per node
+=item *return list of all node keys
+=item *return list of all node objects
+
+
+=head2 Synopsis
+
+See the example in the Github repository and on Rosetta Code.
+
+=begin code
+#!/usr/bin/env perl6
+
+use AVL-Tree;
+# ...create a tree and some nodes...
+my $tree = AVL-Tree.new;
+$tree.insert: 1;
+$tree.insert: 2, :data<some important tidbit of knowledge>;
+$my $n = $tree.find: 2;
+say $n.data;
+some important tidbit of knowledge
+=end code
+
+=head1 CREDITS
+
+Thanks for help from IRC `#raku` friends:
+
+=item `thundergnat` (for the idea and check of the initial version)
+
+=AUTHOR
+
+Tom Browder, (tbrowder@acm.org)
+
+=COPYRIGHT & LICENSE
+
+Copyright (c) 2019-2022 Tom Browder, all rights reserved.
+
+This program is free software; you can redistribute it or modify
+it under the same terms as Raku itself with the following exception:
+
+The code for the methods B<without a leading asterisk> in the
+list above are covered by the GNU Free Document License 1.2.
+
+=end pod
