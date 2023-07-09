@@ -1,4 +1,4 @@
-[![Actions Status](https://github.com/tbrowder/AVL-Tree/workflows/test/badge.svg)](https://github.com/tbrowder/AVL-Tree/actions)
+[![Actions Status](https://github.com/tbrowder/AVL-Tree/actions/workflows/linux.yml/badge.svg)](https://github.com/tbrowder/AVL-Tree/actions) [![Actions Status](https://github.com/tbrowder/AVL-Tree/actions/workflows/macos.yml/badge.svg)](https://github.com/tbrowder/AVL-Tree/actions) [![Actions Status](https://github.com/tbrowder/AVL-Tree/actions/workflows/windows.yml/badge.svg)](https://github.com/tbrowder/AVL-Tree/actions)
 
 AVL-Tree
 ========
@@ -30,23 +30,23 @@ Synopsis
 
 See the example in the Github repository and on Rosetta Code.
 
-    #!/usr/bin/env perl6
+    #!/usr/bin/env raku
 
     use AVL-Tree;
     # ...create a tree and some nodes...
     my $tree = AVL-Tree.new;
     $tree.insert: 1;
     $tree.insert: 2, :data<some important tidbit of knowledge>;
-    $my $n = $tree.find: 2;
+    my $n = $tree.find: 2;
     say $n.data;
     some important tidbit of knowledge
 
 CREDITS
 =======
 
-Thanks for help from IRC `#raku` friends:
+Thanks for help from IRC '#raku' friends:
 
-  * `thundergnat` (for the idea and check of the initial version)
+  * 'thundergnat' (for the idea and check of the initial version)
 
 AUTHOR
 ======
